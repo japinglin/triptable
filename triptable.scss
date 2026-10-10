@@ -1,0 +1,63 @@
+*{
+    font-family: sans-serif;
+    font-size: 0.5rem;
+    color: #333;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+.trip-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+.trip-table {
+    width: 100%;
+    height: 90vh;
+    overflow-x: scroll;
+}
+.trip-table, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    font-size: 2rem;
+    min-width: 200px;
+}
+// 第一欄
+.trip-table, th, td:first-child {
+    width: 20%;
+    min-width: 100px;
+}
+
+.trip-table tr:last-child {
+background-color: #7fffd4;
+}
+.trip-table td.active {
+background-color: #ffff66;
+}
+
+.map {
+    a {
+        display: flex;
+        align-items: center;
+        font-size: inherit;
+        font-weight: 600;
+        text-decoration: none;
+
+        &::before {
+            content: "";
+            background-image: url("img/google-maps.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.to, .go {
+    font-size: 2rem;
+    color:blueviolet;
+}
